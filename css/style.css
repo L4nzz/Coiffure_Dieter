@@ -148,7 +148,7 @@ nav {
 /* Part 1 */
 
 .bg {
-    background-image: url("../img/team.jpg");
+    background-image: url("../img/team.JPG");
     height: 100%; 
     background-position: center;
     background-repeat: no-repeat;
@@ -165,7 +165,7 @@ nav {
 }
 
 .logo {
-    background-image: url("../img/logo.png");
+    background-image: url("../img/logo.PNG");
     height: 100%; 
     background-position: center;
     background-repeat: no-repeat;
@@ -196,21 +196,21 @@ nav {
     width: 60%;
     float: left;
     height: 648px;
-    background-image: url(../img/team1.jpg)
+    background-image: url(../img/team1.JPG)
 }
 
 .sright2 {
     width: 60%;
     float: left;
     height: 648px;
-    background-image: url(../img/team2.jpg)
+    background-image: url(../img/team2.JPG)
 }
 
 .sright3 {
     width: 60%;
     float: left;
     height: 648px;
-    background-image: url(../img/team3.jpg)
+    background-image: url(../img/team3.JPG)
 }
 
 .slides {
@@ -242,7 +242,7 @@ nav {
 .img1 {
     height: 50px;
     width: 50px;
-    background-image: url(../img/phone.png);
+    background-image: url(../img/phone.PNG);
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0 auto;
@@ -251,7 +251,7 @@ nav {
 .img2 {
     height: 50px;
     width: 50px;
-    background-image: url(../img/mail.png);
+    background-image: url(../img/mail.PNG);
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0 auto;
