@@ -242,7 +242,7 @@ nav {
 .img1 {
     height: 50px;
     width: 50px;
-    background-image: url(../img/phone.PNG);
+    background-image: url(../img/phone.png);
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0 auto;
@@ -251,7 +251,7 @@ nav {
 .img2 {
     height: 50px;
     width: 50px;
-    background-image: url(../img/mail.PNG);
+    background-image: url(../img/mail.png);
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0 auto;
