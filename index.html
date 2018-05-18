@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html lang="de" >
+<head>
+    <meta charset="utf-8"/>
+    <title>Coiffure Dieter</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+<body>
+    
+    <!--Part 1-->
+    
+    <nav role="navigation">
+        <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+                <a href="index.html"><li>Home</li></a>
+                <a href="angebot.html"><li>Angebot</li></a>
+                <a href="galerie.html"><li>Galerie</li></a>
+            </ul>
+        </div>
+    </nav>
+    <div class="bg"></div>
+    <div class="bg2"></div>
+    <div class="logo"></div>
+    
+    <!--Part 2-->
+    
+    <div class="part2">
+        <h1>HERZLICH WILKOMMEN<br>BEI COIFFURE DIETER!</h1>
+        <h2>Wir freuen uns auf ihren Besuch<br>und beraten Sie gerne</h2>
+        <h2>We speak english<br>Nous parlons français</h2>
+        <h2>Wir arbeiten mit L‘Oréal und Kérastase.</h2>
+    </div>
+    
+    <!--Part 3-->
+    
+    <div class="part3">
+        <div class="slides">
+            <div class="sleft">
+                <h3>Dieter Gruber</h3>
+                <p>Geschäftsinhaber</p>
+                <span class="span1"></span>
+                <p><b>Einsatzgebiete</b><p>
+                <p>Damencoiffeur<br>
+                Heisse Schere<br>
+                Taomassage</p>
+            </div>
+            <div class="sright1"></div>
+        </div>
+        <div class="slides">
+            <div class="sleft">
+                <h3>Stefanie Kindler</h3>
+                <p><b>Einsatzgebiete</b><p>
+                <p>Damen- und Herrencoiffeuse<br>
+                Kinderhaarschnitte<br>
+                Heisse Schere<br>
+                Taomassage<br>
+                Folienméches<br>
+                Manicure</p>
+            </div>
+            <div class="sright2"></div>
+        </div>
+        <div class="slides">
+            <div class="sleft">
+                <h3>Eliane Ghalem</h3>
+                <p><b>Einsatzgebiete</b><p>
+                <p>Damen- und Herrencoiffeuse<br>
+                Kinderhaarschnitte<br>
+                Heisse Schere<br>
+                Taomassage<br>
+                Folienméches<br>
+                Manicure</p>
+            </div>
+            <div class="sright3"></div>
+        </div>
+    </div>
+    
+    <!--Part 4-->
+
+    <h1>KONTAKT</h1>
+    <h2>Wir befinden uns im Erdgeschoss des Einkaufszentrum Wittigkofen.<br>
+    Gerne können Sie gratis bei uns parkieren.<br>
+    Wir sind ausserdem erreichbar mit der Tramlinie 8, Saali.</h2>
+    
+    <div class="mail_tel">
+    <div class="tel">
+        <div class="img1"></div>
+        <p class="mt_text">Rufen Sie uns an!</p>
+        <p class="mt_text2">+41 31 941 42 22</p>
+    </div>
+    <div class="mail">
+        <div class="img2"></div>
+        <p class="mt_text">Schreiben Sie uns!</p>
+        <a href="mailto:coiffuredieter@bluewin.ch" class="mt_text2">coiffuredieter@bluewin.ch</a>
+    </div>
+    </div>
+    <div class="kontakt">
+        <div class="karte"></div>
+        <div class="open">
+            <h3 class="black">Öffnungszeiten</h3>
+            <p class="black">Montag<span class="abstand">14:00 - 18:30 Uhr</span><br>
+            Dienstag<span class="abstand">8:00 - 18:30 Uhr</span><br>
+            Mittwoch<span class="abstand">8:00 - 18:30 Uhr</span><br>
+            Donnerstag<span class="abstand">8:00 - 18:30 Uhr</span><br>
+            Freitag<span class="abstand">8:00 - 18:30 Uhr</span><br>
+            Samstag<span class="abstand">8:00 - 16:00 Uhr</span></p>
+        </div>
+    </div>
+    
+    <!--Footer-->
+    
+    <footer>
+        <p class="footer_text">Coiffure Dieter | Jupiterstrasse 15 | 3015 Bern | 031 941 42 22</p>
+    </footer>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    <script>
+    var slideIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("slides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none"; 
+        }
+        slideIndex++;
+        if (slideIndex > x.length) {slideIndex = 1} 
+        x[slideIndex-1].style.display = "block"; 
+        setTimeout(carousel, 7000); 
+    }
+    </script>
+    
+    
+</body>
+</html>

@@ -1,0 +1,454 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+a {
+    text-decoration:none
+}
+
+h1, h2 {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: rgb(234, 208, 175);
+    font-weight: lighter;
+    font-size: 45pt;
+    margin-top: 100px;
+}
+
+h2 {
+    font-weight:500;
+    font-size: 25pt
+}
+
+h3 {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25pt;
+    font-weight: 100;
+}
+
+p {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20pt;
+    font-weight: 100;
+    
+}
+
+/* Navigation */
+
+#menuToggle {
+    display:block;
+    position:relative;
+    top:50px;
+    left:50px;
+    z-index:1;
+    -webkit-user-select:none;
+    user-select:none
+}
+
+#menuToggle input {
+    display:block;
+    width:52px;
+    height:42px;
+    position:absolute;
+    top:-7px;
+    left:-5px;
+    cursor:pointer;
+    opacity:0;
+    z-index:2
+}
+
+#menuToggle span {
+    display:block;
+    width:50px;
+    height:6px;
+    margin-bottom:8.7px;
+    position:relative;
+    background:#ead0af;
+    border-radius:3px;
+    z-index:1;
+    transform-origin:4px 0;
+    transition:transform .5s cubic-bezier(0.77,0.2,0.05,1.0),background .5s cubic-bezier(0.77,0.2,0.05,1.0),opacity .55s ease
+}
+
+#menuToggle span:first-child {
+    transform-origin:0 0
+}
+
+#menuToggle span:nth-last-child(2) {
+    transform-origin:0 100%
+}
+
+#menuToggle input:checked ~ span {
+    opacity:1;
+    transform:rotate(45deg) translate(-2px,-1px);
+    background:#ead0af;
+    transition:.5s
+}
+
+#menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity:0;
+    transform:rotate(0deg) scale(0.2,0.2)
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2) {
+    transform:rotate(-45deg) translate(0,-1px)
+}
+
+#menu {
+    position:absolute;
+    width:300px;
+    margin:-100px 0 0 -60px;
+    padding:50px;
+    padding-top:125px;
+    background:#fff;
+    list-style-type:none;
+    -webkit-font-smoothing:antialiased;
+    transform-origin:0 0;
+    transform:translate(-100%,0);
+    transition:transform .5s cubic-bezier(0.77,0.2,0.05,1.0);
+    height:10000%
+}
+
+#menu li {
+    padding:10px 0;
+    font-size:20px;
+    letter-spacing:.4em;
+    line-height:60px;
+    color:#000;
+    text-transform:uppercase;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#menu li:hover {
+    padding:10px;
+    color:#ead0af;
+    transition:.2s
+}
+
+#menuToggle input:checked ~ ul {
+    transform:none
+}
+
+nav {
+    position:fixed;
+    top:0;
+    z-index:500
+}
+
+/* Part 1 */
+
+.bg {
+    background-image: url("../img/team.jpg");
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg2 {
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    height: 100%; 
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.logo {
+    background-image: url("../img/logo.png");
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 20;
+}
+
+/* Part 3 */
+
+.part3 {
+    margin-top: 100px; 
+    width: 100%;
+    height: 400px;
+    margin-bottom: 300px;
+}
+
+.sleft {
+    width: 40%;
+    height: 648px;
+    background-color: black;
+    float: left;
+    padding: 50px 150px;
+}
+
+.sright1 {
+    width: 60%;
+    float: left;
+    height: 648px;
+    background-image: url(../img/team1.jpg)
+}
+
+.sright2 {
+    width: 60%;
+    float: left;
+    height: 648px;
+    background-image: url(../img/team2.jpg)
+}
+
+.sright3 {
+    width: 60%;
+    float: left;
+    height: 648px;
+    background-image: url(../img/team3.jpg)
+}
+
+.slides {
+    display: none;
+}
+
+.span1 {
+    height: 10px;
+    display: block;
+}
+
+/* Part 4 */
+
+.mail_tel {
+    width: 70%;
+    margin: 100px auto;
+}
+
+.tel {
+    float:left;
+    width: 50%;
+}
+
+.mail {
+    float:left;
+    width: 50%;
+}
+
+.img1 {
+    height: 50px;
+    width: 50px;
+    background-image: url(../img/phone.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+.img2 {
+    height: 50px;
+    width: 50px;
+    background-image: url(../img/mail.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+.mt_text {
+    color: black;
+    text-align: center;
+}
+
+.mt_text2 {
+    color: black;
+    text-align: center;
+    margin-top: -20px;
+    font-size: 25pt;
+    font-family: 'Open Sans', sans-serif;
+	width: 100%;
+	display: block;
+}
+
+.open {
+    width: 40%;
+    height: 450px;
+    background-color: rgb(230, 230, 230);
+    float: left;
+    padding: 30px 50px;
+}
+
+.karte {
+    width: 60%;
+    float: left;
+    height: 450px;
+    background-image: url(../img/Unbenannt.PNG)
+}
+
+.kontakt {
+    margin-top: 300px;
+}
+
+.black {
+    color: black;
+}
+
+.abstand {
+    float: right;
+    margin-right: 50px;
+}
+
+.kontakt::after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+/* Footer */
+
+footer {
+    background-color: black;
+    height: 150px;
+    padding-top: 60px;
+}
+
+.footer_text {
+    margin: 0;
+    text-align: center;
+}
+
+/*Galerie*/
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: 50px auto 0 auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.sliderimg {
+	width: 100%;
+}
+
+.f_gal {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+.b_gal {
+	height: auto;
+}
+
+table {
+    border-collapse: collapse;
+    width: 60%;
+	margin: 0 auto;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+	padding-left: 50px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+    background-color: rgb(234, 208, 175);
+    color: white;
+	font-size: 16pt;
+}
+
+td {
+	font-size: 12pt;
+}
+
+.a_text {
+	color: black;
+	text-align: center;
+	font-size: 15pt;
+	margin-top: 80px;
+}

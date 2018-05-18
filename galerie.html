@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="de" >
+<head>
+    <meta charset="utf-8"/>
+    <title>Coiffure Dieter</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+<body class="b_gal">
+    
+    <!--Part 1-->
+    
+    <nav role="navigation">
+        <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+                <a href="index.html"><li>Home</li></a>
+                <a href="angebot.html"><li>Angebot</li></a>
+                <a href="galerie.html"><li>Galerie</li></a>
+            </ul>
+        </div>
+    </nav>
+    
+    <!--Slideshow-->
+    
+	<div class="slideshow-container">
+
+	<div class="mySlides fade">
+	  <img class="sliderimg" src="img/team.JPG">
+	</div>
+
+	<div class="mySlides fade">
+	  <img class="sliderimg" src="img/IMG_1034.JPG">
+	</div>
+
+	<div class="mySlides fade">
+	  <img class="sliderimg" src="img/IMG_1038.JPG">
+	</div>
+
+	<div class="mySlides fade">
+	  <img class="sliderimg" src="img/IMG_1049.JPG">
+	</div>
+
+	<div class="mySlides fade">
+	  <img class="sliderimg" src="img/IMG_1024.JPG" style="width:100%">
+	</div>
+
+	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+	</div>
+	<br>
+
+	<div style="text-align:center">
+	  <span class="dot" onclick="currentSlide(1)"></span> 
+	  <span class="dot" onclick="currentSlide(2)"></span> 
+	  <span class="dot" onclick="currentSlide(3)"></span> 
+	  <span class="dot" onclick="currentSlide(4)"></span> 
+	  <span class="dot" onclick="currentSlide(5)"></span> 
+	</div>
+
+	<script>
+	var slideIndex = 1;
+	showSlides(slideIndex);
+
+	function plusSlides(n) {
+	  showSlides(slideIndex += n);
+	}
+
+	function currentSlide(n) {
+	  showSlides(slideIndex = n);
+	}
+
+	function showSlides(n) {
+	  var i;
+	  var slides = document.getElementsByClassName("mySlides");
+	  var dots = document.getElementsByClassName("dot");
+	  if (n > slides.length) {slideIndex = 1}    
+	  if (n < 1) {slideIndex = slides.length}
+	  for (i = 0; i < slides.length; i++) {
+		  slides[i].style.display = "none";  
+	  }
+	  for (i = 0; i < dots.length; i++) {
+		  dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";  
+	  dots[slideIndex-1].className += " active";
+	}
+	</script>
+    
+    <!--Footer-->
+    
+    <footer class="f_gal">
+        <p class="footer_text">Coiffure Dieter | Jupiterstrasse 15 | 3015 Bern | 031 941 42 22</p>
+    </footer>
+    
+</body>
+</html>
